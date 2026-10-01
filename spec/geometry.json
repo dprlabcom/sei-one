@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "specification": "SEI-ONE-GEOMETRY",
+  "author": "DPRLAB R&D",
+  "camera_rig": {
+    "perspective": "extreme_low_angle",
+    "elevation_angle_degrees": 25.0,
+    "pitch_tilt_degrees": 30.0,
+    "focal_length_mm": 24,
+    "sensor_format": "full_frame",
+    "camera_height_meters": 0.4
+  },
+  "spatial_alignment": {
+    "foreground_entity": {
+      "position": "stair_landing_center",
+      "scale_dominance_ratio": 0.65,
+      "posture_axis": "vertical_imposing"
+    },
+    "background_structure": {
+      "primary_anchor": "cantilevered_container_overhang",
+      "vertical_framing": "ceiling_canopy",
+      "horizon_line_ratio": 0.2
+    }
+  }
+}
