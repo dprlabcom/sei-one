@@ -1,0 +1,30 @@
+version: "1.0.0"
+specification: "SEI-ONE-LIGHTING"
+author: "DPRLAB R&D"
+
+environment_lighting:
+  ambient_sky:
+    time_of_day: "twilight_dusk"
+    color_temperature_kelvin: 7500
+    color_hex: "#3A4B6E"
+    intensity_lux: 150
+    gradient_vector: [0.0, 1.0, -0.5] # Directional fill from upper hemisphere
+
+  interior_illumination:
+    primary_source: "warm_led_strip"
+    color_temperature_kelvin: 3000
+    color_hex: "#FFAC42"
+    intensity_lumens: 2400
+    placement: "recessed_ceiling_and_stair_risers"
+
+specular_reflection_remapping:
+  target_material: "synthetic_high_gloss_latex"
+  fresnel_ior: 1.54
+  roughness_coefficient: 0.05
+  specular_highlight_sources:
+    - source_id: "stair_riser_leds"
+      mapped_surface: "lower_extremities_and_boots"
+      reflection_type: "sharp_linear_accents"
+    - source_id: "twilight_sky_ambient"
+      mapped_surface: "cowl_shoulders_jacket_flaps"
+      reflection_type: "broad_soft_fill"
