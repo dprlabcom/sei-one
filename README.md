@@ -3,6 +3,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Status](https://img.shields.io/badge/Status-Public_Specification-brightgreen.svg)]()
+[![Wellfound](https://img.shields.io/badge/Wellfound-DPRLAB-000000?style=flat-square&logo=wellfound&logoColor=white)](https://wellfound.com/company/dprlabcom)
+[![Website](https://img.shields.io/badge/Website-dprlab.com-000000?style=flat-square)](https://dprlab.com)
 
 ## Overview
 
